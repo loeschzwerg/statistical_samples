@@ -12,3 +12,16 @@ Header | Definition
 `popu06` | The country's 2006 population
 `gdp_source` | Source for `gdp06`
 `popu_source` | Source for `popu06`
+
+## Analysis
+
+### Improvements by Country
+
+#### With Flags
+![Flagged image](elo-blatter/ELO_Flags.svg)
+
+#### via Confederations
+![Confederation image](elo-blatter/Elo_2letter_confederation.svg)
+
+#### Outliers
+The 95th-percentile shows us, which teams had an extraordinary change in the 17 yrs.
