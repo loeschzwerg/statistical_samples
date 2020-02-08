@@ -1,4 +1,4 @@
-library(ggplot3)
+library(ggplot2)
 library(countrycode)
 # if you don't want to install ggflags (https://github.com/rensa/ggflags), skip
 # install.packages('devtools')
