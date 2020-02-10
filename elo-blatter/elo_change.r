@@ -38,3 +38,21 @@ p.flags <- p1 +
   labs(size="Improvement")
 
 p.flags
+
+# dot plot flags: make discrete with estimate flag size, set height manually
+elo$d.improve <- sapply(elo$improvement, function(x)(x%/%50)*50)
+elo$height <- vector(mode='integer', length(elo$improvement))
+d.table <- table(elo$d.improve)
+for (i in seq_along(elo$d.improve)){
+  if (!is.na(elo$d.improve[i])){
+    d.table[[toString(elo$d.improve[i])]] - 1 ->
+      d.table[[toString(elo$d.improve[i])]] ->
+      elo$height[i]
+  }
+}
+p.distribution <- ggplot(aes(x=factor(d.improve), y=height), data=elo) +
+  geom_flag(country=tolower(elo$code)) +
+  xlab("ELO Score Change") +
+  ylab("Count")
+
+p.distribution
