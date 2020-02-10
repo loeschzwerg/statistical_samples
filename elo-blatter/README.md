@@ -18,10 +18,10 @@ Header | Definition
 ### Improvements by Country
 
 #### With Flags
-![Flagged image](elo-blatter/ELO_Flags.svg)
-
+![Flagged image](ELO_Score_Change_Flags.svg)
 #### via Confederations
-![Confederation image](elo-blatter/Elo_2letter_confederation.svg)
+![Confederation image](ELO_Score_Change_Confederation.svg)
 
 #### Outliers
 The 95th-percentile shows us, which teams had an extraordinary change in the 17 yrs.
+![Discrete Distribution](ELO_distribution_flags.svg)
