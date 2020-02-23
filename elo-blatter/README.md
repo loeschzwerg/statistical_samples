@@ -23,5 +23,11 @@ Header | Definition
 ![Confederation image](ELO_Score_Change_Confederation.svg)
 
 #### Outliers
-The 95th-percentile shows us, which teams had an extraordinary change in the 17 yrs.
+The distribution shows us, which teams had an extraordinary change from 1998 to 2015.
 ![Discrete Distribution](ELO_distribution_flags.svg)
+
+### Population based findings
+China and India have a vast population, so we take a look at log(population).
+Higher means better performance in terms of population.
+![Population to ELO ration](elo_to_population.svg)
+Looking at this graph, let us find a function which determines the upper bound for a population's ELO score.
